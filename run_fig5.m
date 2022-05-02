@@ -3,6 +3,8 @@
 
 clear; close all
 
+addpath('./mat_files')
+
 %% Initialize parameters
 
 % plotting parameters
