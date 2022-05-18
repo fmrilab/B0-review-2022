@@ -1,6 +1,6 @@
-% run_sims.m
+% run_fig6.m
 %
-% Main script to run the simulations in Haskell, Nielsen, and Noll,
+% Script to run Figure 6 in Haskell, Nielsen, and Noll,
 % NMR in Biomedicine 2022 off-resonance correction review.
 %
 %
@@ -19,8 +19,6 @@ addpath('./mat_files')
 
 
 %% Initialize variables needed for simulation
-
-im_spi = 30; im_epi = 40;
 
 % image parameters
 n = 180;        % image size
@@ -70,16 +68,16 @@ ylabel('time (ms)'); xlabel('data point index')
 subplot(234); plot(ti_spi_ms); title('spiral time (ms)'); axis square
 ylabel('time (ms)'); xlabel('data point index')
 subplot(235); scatter(ksp_spi(:,1),ksp_spi(:,2),sz1,ti_spi_ms,'filled'); axis image; colorbar
-ylabel('kx (1/cm)'); xlabel('ky (1/cm)'); title('spiral traj, colorbar in ms')
-subplot(232); scatter(ksp_epi(:,1),ksp_epi(:,2),sz1,ti_epi_ms,'filled'); axis image; colorbar
-ylabel('kx (1/cm)'); xlabel('ky (1/cm)'); title('epi traj, colorbar in ms')
+ylabel('ky (1/cm)'); xlabel('kx (1/cm)'); title('spiral traj, colorbar in ms')
+subplot(232); scatter(ksp_epi(:,2),ksp_epi(:,1),sz1,ti_epi_ms,'filled'); axis image; colorbar
+ylabel('ky (1/cm)'); xlabel('kx (1/cm)'); title('epi traj, colorbar in ms')
  
 subplot(236); scatter(ksp_spi(:,1),ksp_spi(:,2),sz2,ti_spi_ms,'filled'); 
 axis image; colorbar; xlim([-zm zm]); ylim([-zm zm])
-ylabel('kx (1/cm)'); xlabel('ky (1/cm)'); title('spiral traj (zoomed), colorbar in ms')
-subplot(233); scatter(ksp_epi(:,1),ksp_epi(:,2),sz2,ti_epi_ms,'filled'); axis image; colorbar
+ylabel('ky (1/cm)'); xlabel('kx (1/cm)'); title('spiral traj (zoomed), colorbar in ms')
+subplot(233); scatter(ksp_epi(:,2),ksp_epi(:,1),sz2,ti_epi_ms,'filled'); axis image; colorbar
 axis image; colorbar; xlim([-zm zm]); ylim([-zm zm])
-ylabel('kx (1/cm)'); xlabel('ky (1/cm)'); title('epi traj (zoomed), colorbar in ms')
+ylabel('ky (1/cm)'); xlabel('kx (1/cm)'); title('epi traj (zoomed), colorbar in ms')
 
 
 %% Create imaging forward models with and without B0 effects
