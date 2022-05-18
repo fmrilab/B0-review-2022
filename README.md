@@ -3,4 +3,5 @@ Code to accompany "Off-resonance artifact correction for magnetic resonance imag
 
 This code requires using the MATLAB version of the Michigan Image Reconstruction Toolbox (MIRT): https://github.com/JeffFessler/mirt
 
-Note May 3, 2022: This version of the repo has the code needed for Figures 5 and 6 of the preprint. Additional model-based image reconstruction (MBIR) code using MIRT will be added in the coming weeks.
+Questions or suggestions? Email Melissa at mhask@umich.edu 
+
