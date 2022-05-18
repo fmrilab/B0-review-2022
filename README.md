@@ -3,5 +3,7 @@ Code to accompany "Off-resonance artifact correction for magnetic resonance imag
 
 This code requires using the MATLAB version of the Michigan Image Reconstruction Toolbox (MIRT): https://github.com/JeffFessler/mirt
 
+Two of the main scripts, *run_fig5.m* and *run_fig6.m* reproduce figures from the paper. *mbir.m* shows an example of model-based image reconstruction using a B0 off-resonance fieldmap within the forward model.
+
 Questions or suggestions? Email Melissa at mhask@umich.edu 
 
