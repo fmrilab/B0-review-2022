@@ -5,5 +5,5 @@ This code requires using the MATLAB version of the Michigan Image Reconstruction
 
 Two of the main scripts, **run_fig5.m** and **run_fig6.m** reproduce Figs. 5 & 6 from the paper. The third main script, **mbir.m**, shows an example of model-based image reconstruction (MBIR) using a B<sub>0</sub> off-resonance fieldmap within the forward model (Equation 23 in the paper).
 
-Questions or suggestions? Email Melissa at mhask@umich.edu :)
+Questions or suggestions? Email Melissa at melissa.w.haskell@gmail.com :)
 
